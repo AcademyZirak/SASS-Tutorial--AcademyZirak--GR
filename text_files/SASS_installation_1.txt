@@ -1,0 +1,34 @@
+How to connect css and scss files of our project?
+
+first of all install node.js (node.js.com)
+
+then install sass using npm package manager of node.js
+
+>> nmp install -g sass
+
+>> sass --version
+
+ now you can convert sass files to css files using sass command using following structure
+
+ if we use below command if gives us the transpiled code right in the terminal
+
+ >> sass file_name.scss
+
+ If we want sass command to give us an output we should use below structure
+
+ >> sass the-address_of_scss_file the_address_of_output
+
+ >> sass ./Example_1.scss ../css/Example_1.css
+
+
+ This method just compiles our files and it does not connect them to each other
+
+Use below structure for connecting them(-w = being under watch)
+
+>> sass a.scss a.css -w
+
+There is another way to connect the files together 
+Go to next file
+
+
+

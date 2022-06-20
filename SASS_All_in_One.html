@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS</title>
+    <style>
+        hr {
+            size: 5px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-title">
+        <h1 style="text-align: center">SASS</h1>
+    </div>
+    <hr>
+    <div id="table-of-contents-1">
+        <h2>Table of Contents</h2>
+        <pre>
+        <a href="#introduction-1">Introduction</a>
+        <a href="#installation-1">Installation</a>
+        <a href="#sass-variables-1">Variables</a>
+        <a href="#sass-variables-2">Variables Scope</a>
+        <a href="#sass-nesting-1">SASS Nesting</a>
+        <a href="#sass-mixin-1">SASS Mixin</a>
+        <a href="#sass-mixin-2">SASS Mixin 2</a>
+
+        </pre>
+    </div>
+    <hr>
+    <div id="introduction-1">
+        <h2>Introduction</h2>
+        <pre>
+        Sass is a CSS pre-processor.
+
+        Sass reduces repetition of CSS and therefore saves time.
+        
+        What is Sass?
+        
+        Sass stands for Syntactically Awesome Stylesheet
+        Sass is an extension to CSS
+        Sass is a CSS pre-processor
+        Sass is completely compatible with all versions of CSS
+        Sass reduces repetition of CSS and therefore saves time
+        Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006
+        Sass is free to download and use
+
+
+        Why Use Sass?
+        
+        Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.
+        
+        Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance,
+        built-in functions, and other stuff.
+
+        The benefit of SASS is for example you define a color as a variable and use 
+        this variable wherever you want.
+
+        Ionic uses SASS.
+        The main core of Bootstrap is also based on SASS.
+
+        The output of a SASS program is a css file.
+
+        The next generation of SASS is SCSS and it is a little better.
+
+
+
+
+
+        </pre>
+    </div>
+    <hr>
+    <div id="installation-1">
+        <h2>Installation</h2>
+        <pre>
+        System Requirements for Sass:
+            
+        Operating system - Sass is platform independent
+        Browser support - Sass works in Edge/IE (from IE 8), Firefox, Chrome, Safari, Opera
+        Programming language - Sass is based on Ruby.
+
+        SASS is a pre-processor language that compiles to a css file.
+
+        SASS is available as a Node.js package so you can install it using NPM package manager.
+
+        Official Website: https://sass-lang.com/
+
+        Follow the instructions of bellow image to install SASS.
+
+        <a href="./assets/SASS_installation_1.png">Complete installation Guide</a>
+        
+        <b>First Option: Using Node.js.</b>
+
+        First of all you should install Node.js from nodejs.com
+        
+        If you have Node.js installed on your system simply install SASS using: CMD/Terminal>>(sudo) npm install -g sass
+
+        then to make sure it is installed type CMD>> sass --version or >> sass --help
+
+        How to connect css and scss files of our project?
+        <a href="./text_files/SASS_installation_1.txt">SASS_installation_1.txt</a>
+        <a href="./text_files/SASS_installation_2.txt">SASS_installation_2.txt</a>
+        
+        <b>Second Option: Using Live Sass Compiler extension</b>
+
+        We can use this extension for VScode .
+        it adds a button to the status bar of vscode and it compiles the sass codes immediately.
+        it connects the files together too.
+
+        By default it saves the compiled file in the same folder of sass files.
+        You should change the setting of the extension.
+
+        <a href="./text_files/SASS_installation_3.txt">SASS_installation_3.txt</a>
+
+
+                    
+        </pre>
+    </div>
+    <hr>
+    <div id="sass-variables-1">
+        <h2>Sass Variables</h2>
+        <pre>
+
+            Variables are a way to store information that you can re-use later.
+            
+            With Sass, you can store information in variables, like:
+            
+            strings, numbers, colors, booleans, lists, nulls
+            
+            Sass uses the $ symbol, followed by a name, to declare variables:
+            
+            $variable_name: value;
+            
+            <a href="./HTML_files/Variable_Example_1.html">Variable_Example_1.html</a>
+            <a href="./scss/Variable_Example_1.scss">Variable_Example_1.scss</a>
+            <a href="./css/Variable_Example_1.css">Variable_Example_1.css</a>
+
+            ---------------------------------------------------------------
+            <a href="./HTML_files/Variable_Example_2.html">Variable_Example_2.html</a>
+            <a href="./scss/Variable_Example_2.scss">Variable_Example_2.scss</a>
+            <a href="./css/Variable_Example_2.css">Variable_Example_2.css</a>
+
+
+            
+
+
+        </pre>
+    </div>
+    <hr>
+    <div id="sass-variables-2">
+        <h2>SASS Variable Scope</h2>
+        <pre>
+        We define sass variables at the beginning of the scss file.
+        This way those variables are known to all the {} spaces inside the file.
+
+        If a variables is defined inside one of the {} spaces it is only known there 
+        unless use !global after it like:
+        {$myColor: green !global}
+
+        </pre>
+    </div>
+    <hr>
+    <div id="sass-nesting-1">
+        <h2>SASS Nesting</h2>
+        <pre>
+        In SASS we can have nested brackets.
+        Using nesting gives us a better management of our stylesheet.
+        Remember that you should use & before events when using nesting.
+
+        Also we can shorten the name of properties like below example.
+
+        <a href="./HTML_files/Nesting_Example_1.html">Nesting_Example_1.html</a>
+        <a href="./scss/Nesting_Example_1.scss">Nesting_Example_1.scss</a>
+        <a href="./css/Nesting_Example_1.css">Nesting_Example_1.css</a>
+
+        </pre>
+    </div>
+    <hr>
+    <div id="sass-mixin-1">
+        <h2>SASS Mixin</h2>
+        <pre>
+        When we want to pack some css code and avoid retyping the we use mixins.
+        Mixins are like variables but they are more strong.
+
+        To define a mixin use @ sigh like: @mixin mixin_name{}
+        To use it inside sass file use bellow structure:
+        @include mixin_name();
+
+        Include a mixin on the top of all the other properties
+        in order to you be able to overwrite them.
+
+        <a href="./HTML_files/Mixin_Example_1.html">Mixin_Example_1.html</a>
+        <a href="./scss/Mixin_Example_1.scss">Mixin_Example_1.scss</a>
+        <a href="./css/Mixin_Example_1.css">Mixin_Example_1.css</a>
+        
+        Tip: Hyphens and underscores are considered to be the same. This means that
+        @mixin important-text { } and @mixin important_text { } are considered as the same mixin!
+
+        A mixin can also include other mixins:
+        
+        @mixin special-text {
+        @include important-text;
+        @include link;
+        @include special-border;
+        }
+        
+        </pre>
+    </div>
+    <hr>
+    <div id="sass-mixin-2">
+        <h2>SASS Mixin 2</h2>
+        <pre>
+        A mixin can act like a function because of having ().
+        A mixin does not necessarily have ().
+
+        </pre>
+    </div>
+</body>
+
+</html>

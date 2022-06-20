@@ -1,0 +1,36 @@
+body {
+  direction: rtl;
+  background-color: antiquewhite;
+}
+
+.nav ul ui {
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+}
+.nav a:hover {
+  color: royalblue;
+  font-size: 30px;
+}
+
+.banner h1 {
+  color: gray;
+  font-size: 40px;
+  text-align: center;
+}
+.banner p {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer h3 {
+  color: gray;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Nesting_Example_1.css.map */

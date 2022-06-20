@@ -1,0 +1,25 @@
+
+First of all install Live Sass Compiler
+
+then open the setting of vscode 
+
+type live sass compiler 
+
+in the section of format setting of the extension 
+
+change the location from null to "./css/" like below:
+if it is null the location will be tha same folder as the sass file.
+if it does not work properly leave it to be null.
+
+It is a little tricky.
+
+{
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath":null
+    }
+
+
+change null to "/css/"
+
+if you change expanded to compressed then you should change extensionName to min.css

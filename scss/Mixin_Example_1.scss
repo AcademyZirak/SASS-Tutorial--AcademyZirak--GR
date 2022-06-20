@@ -1,0 +1,80 @@
+$color-primary:orange;
+$color-secondary:gray;
+$color-tertiary:royalblue;
+
+$font-size-lg:40px;
+$font-size-md:30px;
+$font-size-sm:20px;
+
+
+// this mixin wraps some properties together.
+@mixin headerStyle {
+    color: $color-secondary;
+    font-size: $font-size-lg;
+    font-align: center;
+    font-style: italic;
+
+}
+
+
+
+
+
+
+
+body {
+    direction: rtl;
+    background-color: antiquewhite;
+
+}
+
+
+
+.nav {
+
+    // background-color: $color-primary;
+    ul ui {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: $font-size-sm;
+
+        &:hover {
+
+            // before events you should use &
+            color: $color-tertiary;
+            font-size: $font-size-md;
+        }
+
+    }
+}
+
+
+
+// Below we show have we can shorten font-family and font-size and font-weight
+
+.banner {
+
+    h1 {
+        @include headerStyle()
+    }
+
+    p {
+        font: {
+            family: Helvetica, sans-serif;
+            size: 18px;
+            weight: bold;
+        }
+    }
+}
+
+
+
+.footer h3 {
+    @include headerStyle();
+    color: red; // Overwriting the mixin
+
+}

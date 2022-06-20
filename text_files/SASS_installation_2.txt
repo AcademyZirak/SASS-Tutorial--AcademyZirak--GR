@@ -1,0 +1,44 @@
+
+Using package.json to connect scss and css files
+
+if we have a project it is recommended to use npm abilities to have a package.json 
+file for our project that holds information about our project
+
+>> npm init 
+
+This command asks some questions and makes a package.json file for us.
+if we want to ask no questions :
+
+>> npm init --yes
+
+
+Open the file that is created 
+
+in the scripts section you can write any command to be executed 
+
+We make a new command and name it sassWatch like below then when working with the 
+project just write in the terminal :
+
+// consider that addresses are relative to the package.json file
+
+>> npm run sassWatch
+
+/*
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sassWatch": "sass ./main.scss ./main.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+*/
+
+
+
